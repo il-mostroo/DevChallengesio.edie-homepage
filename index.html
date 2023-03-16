@@ -14,20 +14,23 @@
       href="https://devchallenges.io/"
     />
     <link rel="stylesheet" href="style.css">
-    <title>Devchallenges</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Devchallenges</title>
   </head>
   <body>
-    <header>
-      <h1 class="name">Edie</h1>
-      <div class="menu">
+    <div class="wrap">
+
+      <header>
+        <h1 class="header-name">Edie</h1>
+      <div class="menu header-menu">
         <p class="menu-item">Home</p>
         <p class="menu-item">Services</p>
         <p class="menu-item">Our Works</p>
         <p class="menu-item">Clients</p>
         <p class="menu-item">Contact</p>
       </div>
-      <i class="material-icons"><Menu></Menu></i>
+      <i class="material-icons menu-icon">menu</i>
     </header>
     <h1 class="header-question">Unhappy with your website?</h1>
     <h1 class="header header500-24">We create beautiful and fast web services</h1>
@@ -36,32 +39,38 @@
     <p class="paragraph paragraph400-12">We help transform your ideas into real world applications that will outperform your toughest competition and help you achieve your strategic goals in short period of time.</p>
     <div class="contact-section">
       <p class="contact-question">Want us to contact you?</p>
-      <input type="text" name="email" id="email-input">
-      <input type="submit" value="Join">
+      <div class="input-container">
+        <input type="text" name="email" id="email-input" placeholder="Email">
+        <input type="submit" value="Join" class="blue-submit">
+      </div>
     </div>
-    <h1 class="header header500-24">We offer high demand services</h1>
-    <i class="material-icons">Edit</i>
-    <h1 class="header header700-24">UI/UX Design</h1>
-    <p class="paragraph paragraph400-16">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
-    <input type="button" value="Get starter">
-    <div class="frontend-section">
-      <i class="material-icons">code</i>
+    <h1 class="header header500-24 offers-header">We offer high demand services</h1>
+    <div class="offer">
+      <i class="material-icons icon edit-icon">edit</i>
+      <h1 class="header header700-24">UI/UX Design</h1>
+      <p class="paragraph paragraph400-16">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
+      <input type="button" value="Get started">
+    </div>
+    <div class="offer">
+      <i class="material-icons icon code-icon">code</i>
       <h1 class="header header700-24">Front End</h1>
       <p class="paragraph paragraph400-16">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
-      <input type="button" value="Get starter">
+      <input type="button" value="Get started" id="blue-button">
     </div>
-    <i class="material-icons">Storage</i>
+    <div class="offer">
+      <i class="material-icons icon storage-icon">storage</i>
       <h1 class="header header700-24">Back End</h1>
       <p class="paragraph paragraph400-16">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
-      <input type="button" value="Get starter">
-    <h1 class="header header500-24">Good design means good business</h1>
+      <input type="button" value="Get started">
+    </div>
+    <h1 class="header header500-24" id="design-header">Good design means good business</h1>
     <section class="apps">
       <div class="app">
         <img src="resources/smarthome.jpg" alt="" class="app-image">
         <h3 class="header300-12">Full stack application</h3>
         <h2 class="header500-18">Smart home dashboard</h2>
       </div>
-
+      
       <div class="app">
         <img src="resources/onboard.png" alt="" class="app-image">
         <h3 class="header300-12">UX/UI design</h3>
@@ -73,26 +82,30 @@
         <h3 class="header300-12">Mobile application</h3>
         <h2 class="header500-18">Booking system</h2>
       </div>
-
+      
       <div class="app">
         <img src="resources/juice-product.png" alt="" class="app-image">
         <h3 class="header300-12">Front End applicati on</h3>
         <h2 class="header500-18">Juice product homepage</h2>
       </div>
     </section>
-
-    <p class="see-more">see more</p>
-    <i class="material-icons">trending-flat</i>
-    <h2 class="header500-18">Meet the team</h2>
+    
+    <div class="see-more">
+      <p>see more</p>
+      <i class="material-icons">east</i>
+    </div>
+    <h2 class="header500-18 red-header">Meet the team</h2>
     <h1 class="header500-36">We are chilled and a laidback team</h1>
     <p class="paragraph400-16">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-
+    
     <div class="team-members">
-      <img src="resources/person1.png" alt="" class="member1">
-      <img src="resources/person2.png" alt="" class="membe2">
-      <img src="resources/person3.png" alt="" class="member3">
+      <img src="resources/person3.png" alt="" class="member member1">
+      <div class="members-vertical">
+        <img src="resources/person1.png" alt="" class="member member2">
+        <img src="resources/person2.png" alt="" class="member member3">
+      </div>
     </div>
-
+    
     <p class="paragraph500-24">“Fast and outstanding resutls. Edie understands their customer’s needs. They have a young and talented team.”    </p>
     <div class="member4-profile">
       <img src="resources/person4.png" alt="" class="member4-image">
@@ -101,31 +114,34 @@
         <p class="member4-role">The Decorate Gatsby</p>
       </div>
     </div>
-
+    
     <footer>
-      <div class="menu">
+      <div class="menu footer-menu">
         <p class="menu-item">Home</p>
         <p class="menu-item">Services</p>
         <p class="menu-item">Our Works</p>
         <p class="menu-item">Clients</p>
         <p class="menu-item">Contact</p>
       </div>
-
-      <header class="name">Edie</header>
-
+      
+      <h1 class="footer-name">Edie</h1>
+      
       <div class="social-media">
-        <img src="resources/instagram.svg" alt="" class="social-media-icon">
-        <img src="resources/linkedin.svg" alt="" class="social-media-icon">
-        <img src="resources/twitter.svg" alt="" class="social-media-icon">
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin-square"></i>
+        <i class="fa fa-twitter"></i>
       </div>
-
+      
       <div class="contact-section">
         <p class="contact-question">Want us to contact you?</p>
-        <input type="text" name="email" id="email-input">
-        <input type="submit" value="Join">
+        <div class="input-container">
+          <input type="text" name="email" id="email-input" placeholder="Email">
+          <input type="submit" value="Join" class="blue-submit">
+        </div>
       </div>
-
+      
       <p>created by <a href="https://devchallenges.io/portfolio/il-mostroo">Mohammed Salmi</a> - devChallenges.io</p>
     </footer>
+  </div>
   </body>
 </html>
