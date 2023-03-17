@@ -133,6 +133,7 @@ h1:nth-child(5){
 .offers{
     margin-left: clamp(2.125rem, -1.528rem + 15.587vw, 12.5rem);
     margin-bottom: clamp(9.125rem, 7.056rem + 8.826vw, 15rem);
+    margin-right: clamp(0.625rem, -3.644rem + 18.216vw, 12.75rem);
 }
 .offer .icon{
     color: hsla(var(--hue), var(--saturation), calc(var(--lightness) + 100%), var(--alpha));
@@ -171,7 +172,7 @@ h1:nth-child(5){
     grid-template-rows: repeat(4, 1fr);
     row-gap: 1.875rem;
     margin: 0 clamp(0.625rem, -2.83rem + 14.742vw, 10.438rem);
-    margin-bottom: clamp(0rem, -4.82rem + 20.563vw, 13.688rem);
+    margin-bottom: clamp(0rem, -4.82rem + 20.563vw, 1.288rem);
 }
 .app{
     margin-bottom: 2.25rem;
@@ -225,7 +226,7 @@ input[type=button] {
     display: flex;
     align-items: center;
     margin-left: clamp(0.625rem, -2.896rem + 15.023vw, 10.625rem);
-    margin-bottom: 6.25rem;
+    margin-bottom: 2.25rem;
 }
 .see-more p{
     margin-right: 0.75rem;
@@ -358,7 +359,7 @@ footer{
         font-size: 1.5rem;
     }
 }
-@media only screen and (min-width:68.75rem){
+@media only screen and (min-width:75rem){
     
     #sections{
         display: flex;
@@ -375,21 +376,21 @@ footer{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         column-gap: 1.25rem;
-        margin-bottom: 0;
+        margin-bottom: 3rem;
     }
     .team{
         display: flex;
+        align-items: center;
     }
     .translate-down{
         transform: translateY(5rem);
+    }
+    .see-more p{
+        text-align: end;
     }
 }
 @media only screen and (min-width:90rem){
     .offer .button{
         margin-bottom: 0rem;
-    }
-    .see-more{
-        /* margin-bottom: 0; */
-        margin-left: 61.75rem;
     }
 }
