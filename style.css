@@ -146,6 +146,7 @@ h1:nth-child(5){
 }
 .offer .paragraph{
     margin-bottom: 1.875rem;
+    width: 17.0625rem;
 }
 .offer .button{
     margin-bottom: 8.125rem;
@@ -305,10 +306,12 @@ input[type=button] {
 footer{
     background-color: var(--dark-blue);
     padding-top: clamp(2.25rem, 2.03rem + 0.939vw, 2.875rem);
-    padding-left: clamp(2.563rem, -0.232rem + 11.925vw, 10.5rem);
     padding-bottom: 1.5rem;
     display: flex;
     flex-direction: column;
+}
+.footer-menu, .edie-credentials, #contact-section2{
+    padding-left: clamp(2.563rem, -0.232rem + 11.925vw, 10.5rem);
 }
 .menu-item{
     font-size: 1.125rem;
@@ -328,17 +331,65 @@ footer{
 .fa{
     background-color: hsla(var(--hue), var(--saturation), calc(var(--lightness) + 95%), var(--alpha));    margin-right: 0.325rem;
 }
-footer p, footer p a{
+.footer-paragraph{
+    text-align: center;
+}
+.footer-paragraph, footer p a{
     font-family: var(--montserrat);
     font-size: 0.875rem;
-    text-align: center;
     color: hsla(229, 19%, 77%, 1);
+}
+@media only screen and (min-width: 55.625rem){
+    header{
+        display: flex;
+        align-items: center;
+    }
+    .header-menu{
+        display: inline-flex;
+        width: 43.9375rem;
+        justify-content: space-between;
+    }
+    header .menu-icon{
+        display: none;
+    }
+    .header-menu .menu-item{
+        color: hsla(0, 0%, 20%, 1);
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (min-width:68.75rem){
+    
+    #sections{
+        display: flex;
+    }
+    .footer-paragraph{
+        justify-self: flex-end;
+        align-self: center;
+    }
+    .offers{
+        display: flex;
+        justify-content: space-between;
+    }
+    .apps{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: 1.25rem;
+        margin-bottom: 0;
+    }
+    .team{
+        display: flex;
+    }
+    .translate-down{
+        transform: translateY(5rem);
+    }
 }
 @media only screen and (min-width:90rem){
     .offer .button{
         margin-bottom: 0rem;
     }
     .see-more{
-        margin-bottom: 0;
+        /* margin-bottom: 0; */
+        margin-left: 61.75rem;
     }
 }
