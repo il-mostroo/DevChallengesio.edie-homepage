@@ -31,8 +31,20 @@ header{
     margin-top: clamp(0.813rem, 0.57rem + 1.033vw, 1.5rem) ;
     margin-bottom: clamp(3rem, 1.944rem + 4.507vw, 6rem); 
 }
+.hide-menu{
+    display: none !important;
+}
 .header-menu{
-    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.9375rem;
+    background-color: hsla(248, 35%, 8%, 1);
+    padding: 1.625rem;
+    width: 80%;
+}
+.header-menu .menu-item{
+    margin-bottom: 0.625rem;
 }
 .header-name, .footer-name{
     font-family: var(--heebo);
@@ -349,6 +361,8 @@ footer{
         display: inline-flex;
         width: 43.9375rem;
         justify-content: space-between;
+        flex-direction: row;
+        background-color: transparent;
     }
     header .menu-icon{
         display: none;
