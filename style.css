@@ -21,6 +21,9 @@
     font-family: var(--poppins);
     font-weight: 500;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     min-height: 100vh;
 }
@@ -316,6 +319,36 @@ input[type=button] {
     font-size: 1.125rem;
     color: hsla(var(--hue), var(--saturation), calc(var(--lightness) + 51%), var(--alpha));
 }
+
+/* animations */
+
+.hidden-right{
+    opacity: 0;
+    filter: blur(0.3125rem);
+    transform: translateX(100%);
+    transition: all 1s;
+}
+.hidden-left{
+    opacity: 0;
+    filter: blur(0.3125rem);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+.offer:nth-child(2){
+    transition-delay: 200ms;
+}
+.offer:nth-child(3){
+    transition-delay: 400ms;
+
+}.offer:nth-child(4){
+    transition-delay: 600ms;
+
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
 footer{
     background-color: var(--dark-blue);
     padding-top: clamp(2.25rem, 2.03rem + 0.939vw, 2.875rem);
@@ -332,6 +365,8 @@ footer{
     text-align: left;
 }
 .footer-menu{
+    display: flex;
+    flex-direction: column;
     margin-bottom: 4rem;
 }
 .edie-credentials{
@@ -396,9 +431,9 @@ footer{
         display: flex;
         align-items: center;
     }
-    .translate-down{
-        transform: translateY(5rem);
-    }
+    /* .translate-up{
+        transform: translateY(-5rem);
+    } */
     .see-more p{
         text-align: end;
     }
@@ -406,5 +441,10 @@ footer{
 @media only screen and (min-width:90rem){
     .offer .button{
         margin-bottom: 0rem;
+    }
+}
+@media (prefers-reduced-motion){
+    .hidden-left, .hidden-right{
+        transition: none;
     }
 }
