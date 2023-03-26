@@ -16,8 +16,10 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Devchallenges</title>
     <script src="script.js" defer></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   </head>
   <body>
     <div class="wrap">
@@ -34,11 +36,11 @@
       <i class="material-icons menu-icon">menu</i>
     </header>
     <h1 class="header-question">Unhappy with your website?</h1>
-    <h1 class="header header500-24 hidden-right">We create beautiful and fast web services</h1>
-    <img src="resources/heroImage.jpg" alt="" class="team-image hidden-left">
-    <h1 class="header header500-24 hidden-right">Story, emotion <br> and purpose</h1>
-    <p class="paragraph paragraph400-12 hidden-right" id="paragraph1">We help transform your ideas into real world applications that will outperform your toughest competition and help you achieve your strategic goals in short period of time.</p>
-    <div class="contact-section hidden-left" id="contact-section1">
+    <h1 class="header header500-24" data-aos="fade-left" data-aos-duration="1000">We create beautiful and fast web services</h1>
+    <img src="resources/heroImage.jpg" alt="" class="team-image" data-aos="fade-right" data-aos-duration="1000">
+    <h1 class="header header500-24" data-aos="fade-left" data-aos-duration="1000">Story, emotion <br> and purpose</h1>
+    <p class="paragraph paragraph400-12" id="paragraph1" data-aos="fade-left" data-aos-duration="1000">We help transform your ideas into real world applications that will outperform your toughest competition and help you achieve your strategic goals in short period of time.</p>
+    <div class="contact-section" id="contact-section1" data-aos="fade-right" data-aos-duration="1000">
       <p class="contact-question">Want us to contact you?</p>
       <div class="input-container">
           <input type="text" name="email" id="email-input" placeholder="Email">
@@ -46,50 +48,62 @@
         </div>
       </div>
     </div>
-    <h1 class="header header500-24 offers-header hidden-right">We offer high <br> demand services</h1>
+    <h1 class="header header500-24 offers-header" data-aos="fade-left" data-aos-duration="1000">We offer high <br> demand services</h1>
     <div id="services" class="offers">
-      <div class="offer hidden-left">
-        <i class="material-icons icon edit-icon">edit</i>
-        <h1 class="header header700-24">UI/UX Design</h1>
-        <p class="paragraph paragraph400-16">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
-        <input type="button" value="Get started" class="button">
+      <div class="offer">
+        <div class="hidden-up" data-aos="fade-down" data-aos-duration="1000">
+          <i class="material-icons icon edit-icon">edit</i>
+          <h1 class="header header700-24">UI/UX Design</h1>
+        </div>
+        <div class="hidden-down" data-aos="fade-up" data-aos-duration="1000">
+          <p class="paragraph paragraph400-16">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
+          <input type="button" value="Get started" class="button">
+        </div>
       </div>
-      <div class="offer hidden-left">
-        <i class="material-icons icon code-icon">code</i>
-        <h1 class="header header700-24">Front End</h1>
-        <p class="paragraph paragraph400-16">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
-        <input type="button" value="Get started" id="blue-button" class="button">
+      <div class="offer">
+        <div class="hidden-up" data-aos="fade-down" data-aos-duration="1000">
+          <i class="material-icons icon code-icon">code</i>
+          <h1 class="header header700-24">Front End</h1>
+        </div>
+        <div class="hidden-down" data-aos="fade-up" data-aos-duration="1000">
+          <p class="paragraph paragraph400-16">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
+          <input type="button" value="Get started" id="blue-button" class="button">
+        </div>
       </div>
-      <div class="offer hidden-left">
-        <i class="material-icons icon storage-icon">storage</i>
-        <h1 class="header header700-24">Back End</h1>
-        <p class="paragraph paragraph400-16">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
-        <input type="button" value="Get started">
+      <div class="offer">
+        <div class="hidden-up" data-aos="fade-down" data-aos-duration="1000">
+          <i class="material-icons icon storage-icon">storage</i>
+          <h1 class="header header700-24">Back End</h1>
+        </div>
+        <div class="hidden-down" data-aos="fade-up" data-aos-duration="1000">
+          <p class="paragraph paragraph400-16">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
+          <input type="button" value="Get started">
+        </div>
       </div>
     </div>
-    <h1 class="header header500-24 hidden-right" id="design-header">Good design means <br> good business</h1>
+    <h1 class="header header500-24" id="design-header" data-aos="fade-left" data-aos-duration="1000">Good design means <br> good business</h1>
     <div id="works" class="apps-section">
 
       <section class="apps">
-        <div class="app hidden-left">
+        <div class="app" data-aos="fade-right" data-aos-duration="1000">
         <img src="resources/smarthome.jpg" alt="" class="app-image">
         <h3 class="header300-12">Full stack application</h3>
         <h2 class="header500-18">Smart home dashboard</h2>
       </div>
       
-      <div class="app translate-up hidden-right">
+      <div class="app translate-up" data-aos="fade-left" data-aos-duration="1000">
         <img src="resources/onboard.png" alt="" class="app-image">
         <h3 class="header300-12">UX/UI design</h3>
         <h2 class="header500-18">Onboard application</h2>
       </div>
 
-      <div class="app hidden-left">
+      <div class="app" data-aos="fade-right" data-aos-duration="1000">
         <img src="resources/booking.png" alt="" class="app-image ">
         <h3 class="header300-12">Mobile application</h3>
         <h2 class="header500-18">Booking system</h2>
       </div>
       
-      <div class="app hidden-right translate-up">
+      <div class="app translate-up" data-aos="fade-left" data-aos-duration="1000">
         <img src="resources/juice-product.png" alt="" class="app-image">
         <h3 class="header300-12">Front End application</h3>
         <h2 class="header500-18">Juice product homepage</h2>
@@ -102,12 +116,12 @@
     </div>
   </div>
     <div id="clients" class="team">
-      <div class="team-infos hidden-left">
+      <div class="team-infos" data-aos="fade-right" data-aos-duration="1000">
         <h2 class="header500-18 red-header">Meet the team</h2>
         <h1 class="header500-36">We are chilled <br> and a laidback team</h1>
         <p class="paragraph400-16">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
-      <div class="team-members hidden-right">
+      <div class="team-members" data-aos="fade-left" data-aos-duration="1000">
         <img src="resources/person3.png" alt="" class="member member1">
         <div class="members-vertical">
           <img src="resources/person1.png" alt="" class="member member2">
@@ -116,17 +130,17 @@
       </div>
     </div>
     
-    <p class="paragraph500-24 hidden-left">“Fast and outstanding resutls. Edie understands their customer’s needs. They have a young and talented team.”    </p>
-    <div class="member4-profile">
+    <p class="paragraph500-24" data-aos="fade-right" data-aos-duration="1000">“Fast and outstanding resutls. Edie understands their customer’s needs. They have a young and talented team.”    </p>
+    <div class="member4-profile" data-aos="fade-left" data-aos-duration="1000">
       <img src="resources/person4.png" alt="" class="member4-image">
-      <div class="member4-infos hidden-right">
+      <div class="member4-infos" data-aos="fade-left" data-aos-duration="1000">
         <p class="member4-name">Carlos Tran</p>
         <p class="member4-role">The Decorate Gatsby</p>
       </div>
     </div>
     
     <footer>
-      <div id="sections" class="hidden">
+      <div id="sections">
         <div class="menu footer-menu">
           <a href="#home" class="menu-item">Home</a>
           <a href="#services" class="menu-item">Services</a>
@@ -155,5 +169,8 @@
       <p class="footer-paragraph">created by <a href="https://devchallenges.io/portfolio/il-mostroo">il-moostro</a> - devChallenges.io</p>
     </footer>
   </div>
+  <script>
+    AOS.init();
+  </script>
   </body>
 </html>

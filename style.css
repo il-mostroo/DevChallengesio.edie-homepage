@@ -23,7 +23,7 @@
 }
 html{
     scroll-behavior: smooth;
-    overflow-y: scroll;
+    overflow-x: hidden;
 }
 body{
     min-height: 100vh;
@@ -319,36 +319,6 @@ input[type=button] {
 .member4-role{
     font-size: 1.125rem;
     color: hsla(var(--hue), var(--saturation), calc(var(--lightness) + 51%), var(--alpha));
-}
-
-/* animations */
-
-.hidden-right{
-    opacity: 0;
-    filter: blur(0.3125rem);
-    transform: translateX(100%);
-    transition: all 1s;
-}
-.hidden-left{
-    opacity: 0;
-    filter: blur(0.3125rem);
-    transform: translateX(-100%);
-    transition: all 1s;
-}
-.offer:nth-child(2){
-    transition-delay: 200ms;
-}
-.offer:nth-child(3){
-    transition-delay: 400ms;
-
-}.offer:nth-child(4){
-    transition-delay: 600ms;
-
-}
-.show{
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
 }
 footer{
     background-color: var(--dark-blue);
