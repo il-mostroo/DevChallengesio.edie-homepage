@@ -6,7 +6,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://{[your-demo-link.your-domain](https://il-mostroo.github.io/DevChallengesio.edie-homepage/)}">
       Demo
     </a>
     <span> | </span>
